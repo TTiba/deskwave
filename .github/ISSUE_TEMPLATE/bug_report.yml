@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible DeskWeave problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include private IP addresses, device serial numbers, signing files, or sensitive screen contents.
+        Report security vulnerabilities privately as described in SECURITY.md.
+  - type: input
+    id: mac
+    attributes:
+      label: Mac and macOS
+      placeholder: MacBook Pro M4 Pro, macOS 15.x
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Tablet and Android
+      placeholder: Manufacturer and model, Android version
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: DeskWeave version
+      placeholder: 0.3.0 on both devices
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest reliable sequence that triggers the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and statistics
+      description: Include received/displayed/dropped FPS and bitrate when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: shell
+

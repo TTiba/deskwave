@@ -1,0 +1,36 @@
+# macOS / Finder
+.DS_Store
+*.xcuserstate
+DerivedData/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+macOS/DeskWeaveMac/dist/
+
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+captures/
+.idea/
+*.iml
+
+# Signing material and secrets
+*.jks
+*.keystore
+*.p12
+*.pem
+*.mobileprovision
+.env
+.env.*
+
+# Generated releases
+release/
+*.apk
+*.aab
+*.app
+*.dmg
+*.zip
+
