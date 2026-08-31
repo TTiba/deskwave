@@ -57,5 +57,5 @@ passwords.
 - app bundle passes `codesign --verify --deep --strict`;
 - Android `assembleDebug` succeeds;
 - Android lint contains no errors;
-- both applications report version 0.3.0;
+- both applications report version 0.3.1;
 - no build output or signing material appears in `git status`.

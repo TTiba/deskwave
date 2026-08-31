@@ -9,7 +9,7 @@ final class AppModel: ObservableObject {
     @Published private(set) var addresses: [String] = []
     @Published private(set) var statistics = "Waiting for stream"
 
-    private let port: UInt16 = 5900
+    private let port: UInt16 = 5901
     private let captureWidth = 1792
     private let captureHeight = 1120
     private let framesPerSecond = 60

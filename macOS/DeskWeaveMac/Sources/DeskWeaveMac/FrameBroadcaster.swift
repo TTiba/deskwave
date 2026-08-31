@@ -216,7 +216,7 @@ final class FrameBroadcaster {
 }
 
 private enum StreamProtocol {
-    private static let magic: UInt32 = 0x53535632 // "SSV2"
+    private static let magic: UInt32 = 0x44573331 // "DW31"
     private static let configurationType: UInt8 = 1
     private static let frameType: UInt8 = 2
     private static let keyFrameFlag: UInt8 = 1

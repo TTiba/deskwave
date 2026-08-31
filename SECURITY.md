@@ -6,7 +6,7 @@ Security fixes target the latest source version on the default branch.
 
 ## Important network warning
 
-DeskWeave 0.3 uses an unauthenticated, unencrypted TCP stream on port `5900`.
+DeskWeave 0.3 uses an unauthenticated, unencrypted TCP stream on port `5901`.
 Anyone able to reach the Mac on that port may connect to the video stream.
 
 - Use only a trusted private network.
@@ -26,4 +26,3 @@ steps, and any proposed mitigation.
 
 No bug bounty is offered at this stage. Please allow reasonable time for a fix
 before public disclosure.
-

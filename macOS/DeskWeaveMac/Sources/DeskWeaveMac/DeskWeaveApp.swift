@@ -27,6 +27,9 @@ private struct ContentView: View {
                         .font(.title2.weight(.semibold))
                     Text("H.264 Main 4.2 • 1792 × 1120 • up to 60 fps")
                         .foregroundStyle(.secondary)
+                    Text("Version 0.3.1 • protocol DW31")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
                 }
             }
 

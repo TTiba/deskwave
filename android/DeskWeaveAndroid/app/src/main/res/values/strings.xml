@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DeskWeave</string>
-    <string name="address_hint">Address shown on the Mac, for example 192.168.1.20:5900</string>
+    <string name="address_hint">Address shown on the Mac, for example 192.168.1.20:5901</string>
     <string name="connect">Connect</string>
     <string name="disconnect">Disconnect</string>
-    <string name="waiting">Enter the address shown on the Mac.</string>
+    <string name="waiting">DeskWeave 0.3.1 • DW31 — enter the Mac address.</string>
 </resources>

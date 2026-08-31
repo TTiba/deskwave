@@ -18,7 +18,7 @@ hardware and presents it full-screen.
 
 > [!WARNING]
 > The current protocol is not encrypted or authenticated. Use DeskWeave only
-> on a trusted private network. Do not expose TCP port `5900` to the internet.
+> on a trusted private network. Do not expose TCP port `5901` to the internet.
 
 [Português do Brasil](README.pt-BR.md)
 
@@ -100,7 +100,7 @@ Install it with Android Studio or `adb install -r app-debug.apk`.
 2. Click **Create second display**.
 3. Grant Screen Recording permission if requested, then start it again.
 4. Open DeskWeave on the Android tablet.
-5. Enter one of the addresses shown by the Mac, including `:5900`.
+5. Enter one of the addresses shown by the Mac, including `:5901`.
 6. Tap **Connect**.
 7. Arrange the new display in **System Settings → Displays** and drag a window
    onto it.
@@ -113,7 +113,7 @@ Tap the tablet screen to show or hide connection statistics.
 flowchart LR
     VD["CGVirtualDisplay"] --> SC["ScreenCaptureKit / NV12"]
     SC --> VT["VideoToolbox / H.264"]
-    VT --> TCP["SSV2 over TCP 5900"]
+    VT --> TCP["DW31 over TCP 5901"]
     TCP --> MC["Android MediaCodec"]
     MC --> SV["SurfaceView"]
 ```

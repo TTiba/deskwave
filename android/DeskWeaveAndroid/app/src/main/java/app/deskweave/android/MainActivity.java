@@ -37,8 +37,8 @@ import java.util.Locale;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class MainActivity extends Activity {
-    private static final int DEFAULT_PORT = 5900;
-    private static final int STREAM_MAGIC = 0x53535632; // "SSV2"
+    private static final int DEFAULT_PORT = 5901;
+    private static final int STREAM_MAGIC = 0x44573331; // "DW31"
     private static final int PACKET_CONFIGURATION = 1;
     private static final int PACKET_FRAME = 2;
     private static final int FLAG_KEY_FRAME = 1;
@@ -315,7 +315,14 @@ public final class MainActivity extends Activity {
                         int magic = input.readInt();
                         if (magic != STREAM_MAGIC) {
                             throw new IOException(
-                                    "Incompatible protocol. Update both applications."
+                                    String.format(
+                                            Locale.US,
+                                            "Wrong service or incompatible version "
+                                                    + "(received 0x%08X). Open "
+                                                    + "DeskWeave 0.3.1 on the Mac "
+                                                    + "and use the address ending in :5901.",
+                                            magic
+                                    )
                             );
                         }
 

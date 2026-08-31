@@ -12,7 +12,7 @@ protocol over one TCP connection.
 3. `H264Encoder` sends the pixel buffers to a real-time VideoToolbox hardware
    encoder configured for H.264 Main Profile Level 4.2 at approximately
    12 Mbit/s.
-4. `FrameBroadcaster` listens on TCP port 5900 and sends codec configuration
+4. `FrameBroadcaster` listens on TCP port 5901 and sends codec configuration
    followed by Annex B H.264 access units.
 
 The private API is isolated in an Objective-C bridge so the rest of the app
@@ -27,13 +27,13 @@ uses a small C interface and fails gracefully when the symbols are unavailable.
 4. Annex B access units are queued into MediaCodec and rendered to a
    `SurfaceView`.
 
-## SSV2 framing
+## DW31 framing
 
 Each packet starts with a 20-byte big-endian header:
 
 | Field | Size | Description |
 |---|---:|---|
-| Magic | 4 | `SSV2` / `0x53535632` |
+| Magic | 4 | `DW31` / `0x44573331` |
 | Type | 1 | `1` configuration, `2` video frame |
 | Flags | 1 | Bit 0 identifies a keyframe |
 | Reserved | 2 | Zero |
@@ -53,7 +53,6 @@ queue to grow indefinitely.
 
 ## Trust boundary
 
-SSV2 currently provides framing, not security. There is no pairing,
+DW31 currently provides framing, not security. There is no pairing,
 authentication, integrity protection, or encryption. The listener must remain
 on a trusted local network until a secure transport is implemented.
-

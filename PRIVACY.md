@@ -16,5 +16,4 @@ Video travels directly from the Mac to the Android tablet over the local
 network. Version 0.3 does not encrypt or authenticate that connection, so it
 must be used only on a trusted private network. Content placed on the virtual
 display may be visible to another client that can reach the Mac on TCP port
-5900.
-
+5901.

@@ -14,7 +14,7 @@ hardware e o apresenta em tela cheia.
 
 > [!WARNING]
 > O protocolo atual não possui criptografia nem autenticação. Use somente em
-> uma rede privada confiável e nunca exponha a porta TCP `5900` à internet.
+> uma rede privada confiável e nunca exponha a porta TCP `5901` à internet.
 
 [Read in English](README.md)
 
@@ -58,7 +58,7 @@ Consulte [BUILDING.md](docs/BUILDING.md) para os requisitos completos.
 1. Abra o DeskWeave no Mac e clique em **Create second display**.
 2. Autorize Gravação da Tela quando solicitado.
 3. Abra o DeskWeave no tablet.
-4. Digite um dos endereços exibidos no Mac, incluindo `:5900`.
+4. Digite um dos endereços exibidos no Mac, incluindo `:5901`.
 5. Toque em **Connect**.
 6. Organize a nova tela em **Ajustes do Sistema → Monitores**.
 
@@ -73,4 +73,3 @@ Consulte [BUILDING.md](docs/BUILDING.md) para os requisitos completos.
 
 Contribuições são bem-vindas. Leia [CONTRIBUTING.md](CONTRIBUTING.md) e
 [SECURITY.md](SECURITY.md). O projeto utiliza a [licença MIT](LICENSE).
-

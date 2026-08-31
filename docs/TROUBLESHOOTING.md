@@ -17,7 +17,7 @@
 ## Android cannot connect
 
 - Confirm both devices use the same Wi-Fi network.
-- Enter the complete address, including `:5900`.
+- Enter the complete address, including `:5901`.
 - Avoid guest Wi-Fi or access points with client isolation.
 - Check the macOS firewall prompt and allow incoming connections.
 - Do not use a public internet address.
@@ -49,4 +49,3 @@ play a video before measuring frame rate.
 
 DeskWeave depends on a private API. If `CGVirtualDisplay` is unavailable after
 a macOS update, collect the exact macOS version and open a compatibility issue.
-

@@ -36,7 +36,7 @@ assume or embed a remote account.
 
 ## First release
 
-Suggested tag: `v0.3.0-alpha.1`.
+Suggested tag: `v0.3.1-alpha.1`.
 
 Attach release artifacts instead of committing them:
 
@@ -47,4 +47,3 @@ Attach release artifacts instead of committing them:
 The release notes must state that the macOS app is experimental, ad-hoc signed
 unless the maintainer notarizes it, uses a private API, and that the stream is
 not encrypted or authenticated.
-
